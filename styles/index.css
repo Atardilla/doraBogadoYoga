@@ -1,0 +1,125 @@
+.full-site {
+  background: url("../images/flowers-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500vh;
+}
+
+.full-site #header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Dancing Script";
+  background: #fcd8d83b;
+}
+
+.full-site #header .logo-container {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #3d5517;
+  font-size: 3em;
+}
+
+.full-site #header .logo-container img {
+  margin: 10px;
+  max-width: 100px;
+}
+
+.full-site #header .menu {
+  font-family: "Josefin Slab";
+}
+
+.full-site #header .menu .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.full-site #header .menu .nav .nav-link {
+  color: #3d5517;
+  font-size: 1.25em;
+  margin: 0 15px;
+}
+
+.full-site #header .menu .nav .dropdown-toggle {
+  color: #3d5517;
+  font-size: 1.25em;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.full-site #header .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.full-site #header .socials .fab {
+  margin: 10px;
+  color: #3d5517;
+  font-size: 1.5em;
+}
+
+.full-site #header .socials .fab:hover {
+  color: #da11a5;
+}
+
+.full-site #main-site .carousel .carousel-inner .carousel-caption {
+  background: #00000055;
+  border-radius: 15px;
+}
+
+.full-site #main-site .carousel .carousel-inner .carousel-caption h5 {
+  font-weight: bolder;
+}
+
+.full-site .call-to-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+}
+
+.full-site .call-to-action .button {
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  background: #25D366;
+  border: none;
+}
+
+.full-site .call-to-action .button i {
+  color: white;
+}
+
+.full-site .call-to-action .button a {
+  text-decoration: none;
+  color: white;
+}
+
+.full-site .footer #map {
+  height: 10vh;
+}
+/*# sourceMappingURL=index.css.map */
