@@ -2,7 +2,22 @@
   background: url("../images/flowers-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500vh;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.full-site .separator {
+  width: 80vw;
+  height: 10vh;
 }
 
 .full-site #header {
@@ -30,7 +45,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: #3d5517;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .full-site #header .logo-container img {
@@ -54,7 +69,10 @@
 .full-site #header .menu .nav .nav-link {
   color: #3d5517;
   font-size: 1.25em;
-  margin: 0 15px;
+}
+
+.full-site #header .menu .nav .nav-link:hover {
+  color: #da11a5;
 }
 
 .full-site #header .menu .nav .dropdown-toggle {
@@ -62,6 +80,11 @@
   font-size: 1.25em;
   text-decoration: none;
   margin: 0 15px;
+  border-radius: 25px;
+}
+
+.full-site #header .menu .nav .dropdown-toggle:hover {
+  color: #da11a5;
 }
 
 .full-site #header .socials {
@@ -74,10 +97,83 @@
   margin: 10px;
   color: #3d5517;
   font-size: 1.5em;
+  border-radius: 25px;
 }
 
 .full-site #header .socials .fab:hover {
   color: #da11a5;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.full-site #header .location {
+  height: 10vh;
+  background: url("../images/map.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.full-site #header .location a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.full-site #header .precios, .full-site #header .mid-space {
+  height: 10vh;
+  background: #fcd8d83b;
+  font-size: 1.25em;
+  color: #3d5517;
+  font-weight: bolder;
+  font-family: "Josefin Slab";
+}
+
+.full-site .button-show-curses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+}
+
+.full-site .button-show-curses .que-te-ofrezco {
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  background: #3d5517;
+  border: 1px solid #3d5517;
+  color: white;
+  font-weight: bolder;
+  -webkit-transition: background 0.2s, border 0.2s, -webkit-box-shadow 0.2s;
+  transition: background 0.2s, border 0.2s, -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s, background 0.2s, border 0.2s;
+  transition: box-shadow 0.2s, background 0.2s, border 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.full-site .button-show-curses .que-te-ofrezco:hover {
+  background: #3d5517;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
+  color: white;
+}
+
+.full-site .accordion-flush {
+  background: #fadbfabe;
+}
+
+.full-site .accordion-flush .accordion-item .accordion-collapse .accordion-body .card .list-group .list-group-item {
+  background: #fadbfabe;
+}
+
+.full-site #main-site .carousel {
+  margin: 20px;
+  -webkit-box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 3px rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 3px rgba(0, 0, 0, 0.19);
 }
 
 .full-site #main-site .carousel .carousel-inner .carousel-caption {
@@ -106,8 +202,12 @@
   width: 250px;
   height: 50px;
   border-radius: 50px;
-  background: #25D366;
-  border: none;
+  background: #25d366;
+  border: 1px solid #25d300;
+  -webkit-transition: background 0.2s, border 0.2s, -webkit-box-shadow 0.2s;
+  transition: background 0.2s, border 0.2s, -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s, background 0.2s, border 0.2s;
+  transition: box-shadow 0.2s, background 0.2s, border 0.2s, -webkit-box-shadow 0.2s;
 }
 
 .full-site .call-to-action .button i {
@@ -115,11 +215,16 @@
 }
 
 .full-site .call-to-action .button a {
+  font-weight: bolder;
   text-decoration: none;
   color: white;
 }
 
-.full-site .footer #map {
-  height: 10vh;
+.full-site .call-to-action .button:hover {
+  border: 1px solid #31df70;
+  background: #31df70;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
+  color: #da11a5;
 }
 /*# sourceMappingURL=index.css.map */
